@@ -48,6 +48,9 @@
             "remote.restoreForwardedPorts": false
 
         },
+      "mounts": [
+    "source=/Volumes/Umit_SSD/coco_data,target=/workspaces/autoencoders/coco_ssd,type=bind"
+],
 
         // Add the IDs of VS code extensions you want to install here
         // These extensions provide Python development, documentation, and project management support

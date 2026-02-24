@@ -35,7 +35,7 @@ COCO_CLASSES = [
 IMAGE_SIZE = 64
 
 
-def load_coco_cached(subset_percent=10, normalize=True, image_size=IMAGE_SIZE, cache_dir='../data'):
+def load_coco_cached(subset_percent=10, normalize=True, image_size=IMAGE_SIZE, cache_dir='/root/tensorflow_datasets'):
     """
     Load COCO dataset with caching for faster subsequent loads.
     
@@ -216,6 +216,7 @@ def load_coco(subset_percent=10, normalize=True, image_size=IMAGE_SIZE):
         split=[train_split, test_split],
         as_supervised=False,
         with_info=True,
+        data_dir='/workspaces/autoencoders/coco_ssd'
     )
     
     def preprocess_fn(example):
