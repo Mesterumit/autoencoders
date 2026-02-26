@@ -45,6 +45,7 @@ venv.bak/
 
 # Data (don't commit large datasets)
 data/
+coco_sdd/
 *.h5
 *.hdf5
 
